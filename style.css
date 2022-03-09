@@ -16,19 +16,95 @@
     width: 80%;
     margin: 0 auto;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.btn{
+    color: white;
+}
+
+.color-nero{
+    color: black;
+}
+
+.color-bianco{
+    color: white;
+}
 /* /GENERAL */
 
 
 /* HEADER */
 header{
-    height: 70px;
-    background-color: blue;
+    background-color: rgb(37, 94, 233);
+}
+
+/* Nav */
+header nav ul{
+    list-style: none;
+    width: 100%;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav li.li-cx{
+    margin: 0 calc(20% - 40px);
+}
+
+
+/* Jumbo */
+header div.jumbo{
+    position: relative;
+    height: 75vh;
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+}
+
+header div.jumbo-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 /* /HEADER */
 
 
-/*  */
-/*  */
+/* MAIN */
+section{
+    height: 75vh;
+    position: relative;
+}
+
+section:nth-child(2n+2){
+    background-color: rgb(246, 246, 246);
+}
+
+div.container{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 50px 0px;
+}
+
+div.scheda{
+    width: 50%;
+    float: left;
+    border: 1px solid black;
+}
+
+div.scheda img{
+    width: 100%;
+}
+/* /MAIN */
 
 
 /*  */
