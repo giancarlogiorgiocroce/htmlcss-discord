@@ -1,12 +1,17 @@
-/* GENERAL */
+/* 
+    GENERAL
+*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
 }
 
 :root{
-    --block-height: 60vh;
+    --block-height: 65vh;
 }
 
 .clearfix::after{
@@ -24,11 +29,19 @@
 a{
     color: white;
     text-decoration: none;
-    text-transform: capitalize;
+}
+
+a:hover{
+    cursor: pointer;
+    color: blue;
 }
 
 ul{
     list-style: none;
+}
+
+i{
+    margin-right: 5px;
 }
 
 /* Bottoni */
@@ -39,7 +52,8 @@ ul{
 
 .btn-big{
     border-radius: 22px;
-    padding: 12px 18px;
+    padding: 15px 20px;
+    margin: 10px 15px;
 }
 
 /* Colori background */
@@ -63,10 +77,14 @@ ul{
 .color-bianco{
     color: white;
 }
-/* /GENERAL */
+/* 
+    /GENERAL
+*/
 
 
-/* HEADER */
+/*
+    HEADER
+*/
 header{
     background-color: rgb(37, 94, 233);
 }
@@ -77,10 +95,15 @@ header nav ul li{
     padding: 20px;
 }
 
-header nav li.li-cx{
-    margin: 0 calc(20% - 40px);
+header nav ul li img{
+    height: 30px;
+    vertical-align: bottom;
 }
 
+header nav li.li-cx{
+    margin: 0 calc(15% - 40px);
+    text-transform: capitalize;
+}
 
 /* Jumbo */
 header div.jumbo{
@@ -94,13 +117,27 @@ header div.jumbo-text{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -75%);
     text-align: center;
 }
-/* /HEADER */
+
+header div.jumbo-text h1{
+    font-size: 50px;
+    margin: 40px 0;
+}
+
+header div.jumbo-text p{
+    font-size: 20px;
+    margin: 40px 0;
+}
+/*
+    /HEADER
+*/
 
 
-/* MAIN */
+/*
+    MAIN
+*/
 section{
     height: var(--block-height);
     position: relative;

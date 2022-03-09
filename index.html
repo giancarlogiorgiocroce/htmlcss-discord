@@ -4,16 +4,25 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Esercizio - Discord</title>
 </head>
 <body>
 
     <header>
-    
+
+        <!-- Parte in alto con i Links -->
         <nav class="container">
             <ul>
-                <li><img src="#" alt="">Discord</li>
+                <li>
+                    <a href="#">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </li>
                 <li class="li-cx">
                     <ul>
                         <li><a href="#">scarica</a></li>
@@ -23,23 +32,42 @@
                         <li><a href="#">assistenza</a></li>
                     </ul>
                 </li>
-                <li><a class="btn-small bg-white color-nero" href="#">accedi</a></li>
+                <li>
+                    <a class="btn-small bg-white color-nero" href="#">Accedi</a>
+                </li>
             </ul>
         </nav>
+        <!-- /Parte in alto con i Links -->
 
+        <!-- Jumbotron (Immagine + Testo + Bottoni) -->
         <div class="jumbo">
             <div class="jumbo-text color-bianco">
-                <h1>Il tuo posto per parlare</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat exercitationem quas esse totam maxime aperiam iure possimus eveniet voluptas? Atque, nulla quasi inventore iure quos exercitationem doloribus expedita illum.</p>
-                <span><a href="" class="btn-big bg-white color-nero">Scarica per Mac</a></span>
-                <span><a href="" class="btn-big bg-black">Apri Discord nel tuo Browser</a></span>
+                <h1>
+                    Il tuo posto per parlare
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat exercitationem quas esse totam maxime aperiam iure possimus eveniet voluptas? Atque, nulla quasi inventore iure quos exercitationem doloribus expedita illum.
+                </p>
+                <span>
+                    <a href="" class="btn-big bg-white color-nero">
+                        <i class="fa-solid fa-down-long"></i>
+                        Scarica per Mac
+                    </a>
+                </span>
+                <span>
+                    <a href="" class="btn-big bg-black">
+                        Apri Discord nel tuo Browser
+                    </a>
+                </span>
             </div>
         </div>
+        <!-- /Jumbotron (Immagine + Testo + Bottoni) -->
 
     </header>
 
     <main>
-        <section>
+        <!-- Immagine e Testo float che si invertono di posizione da section a section -->
+        <section> <!-- Prima sezione -->
             <div class="container clearfix">
                 <div class="scheda">
                     <img src="img/item1.svg" alt="study group">
@@ -49,8 +77,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem incidunt totam iure? Expedita deserunt iusto architecto corrupti rerum atque id dolores sit sint nesciunt fugit quae quos harum eos aut, minima numquam dolore esse?</p>
                 </div>
             </div>
-        </section>
-        <section>
+        </section> <!-- /Prima sezione -->
+
+        <section> <!-- Seconda sezione -->
             <div class="container clearfix">
                 <div class="scheda">
                     <h1>Lorem ipsum dolor sit amet.</h1>
@@ -60,8 +89,9 @@
                     <img src="img/item2.svg" alt="voice connected">
                 </div>
             </div>
-        </section>
-        <section>
+        </section> <!-- /Seconda sezione -->
+
+        <section> <!-- Terza sezione -->
             <div class="container clearfix">
                 <div class="scheda">
                     <img src="img/item3.svg" alt="graggle">
@@ -71,7 +101,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem incidunt totam iure? Expedita deserunt iusto architecto corrupti rerum atque id dolores sit sint nesciunt fugit quae quos harum eos aut, minima numquam dolore esse?</p>
                 </div>
             </div>
-        </section>
+        </section> <!-- /Terza sezione -->
+        <!-- /Immagine e Testo float che si invertono di posizione da section a section -->
+
         <section class="ultimo">
             <div class="container">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
@@ -79,7 +111,7 @@
                 <img src="img/item4-big.svg" alt="">
                 <div class="stelline">
                     <h1>Pronto ad iniziare l'avventura?</h1>
-                    <span class="btn-big bg-blue color-bianco">Scarica per Mac</span>
+                    <a class="btn-big bg-blue color-bianco">Scarica per Mac</a>
                 </div>
             </div>
         </section>
