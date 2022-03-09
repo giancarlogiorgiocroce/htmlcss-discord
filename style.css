@@ -218,9 +218,14 @@ div.stelline{
     FOOTER
 */
 footer{
-    height: var(--block-height);
+    min-height: var(--block-height);
     background-color: rgb(35, 39, 42);
     color: white;
+    text-align: left;
+}
+
+footer div.container{
+    padding: 100px;
 }
 
 /* Div Superiore */
@@ -233,28 +238,48 @@ footer div.colonna.plus{
     width: 40%;
 }
 
+footer li{
+    padding-bottom: 15px;
+}
+
+footer div.sup h3{
+    font-size: 30px;
+    padding: 0 100px 20px 0;
+}
+
 footer div.sup h3, footer div.sup p{
     color: rgb(114, 137, 218);
 }
 
-footer div.colonna.plus img{
+div.colonna.plus span{
+    font-size: 13px;
+}
+
+div.colonna.plus img{
     width: 20px;
+    vertical-align: middle;
 }
 
-/* select{
-    background-color: rgb(35, 39, 42);
-    color: white;
-    width: 100px;
+div.colonna.plus span i{
+    font-size: 10px;
+    text-align: center;
 }
 
-option::before{
-    content: url(img/ita.png);
-} */
+div.contenitore-loghi i{
+    font-size: 20px;
+    padding: 20px 15px 0 0;
+}
 
 /* Div Inferiore */
 div.inf{
     position: relative;
     border-top: 2px solid rgb(114, 137, 218);
+}
+
+div.inf a.btn-dx{
+    font-size: 13px;
+    border-radius: 15px;
+    padding: 9px 10px;
 }
 
 div.inf a.logo-sx, div.inf a.btn-dx{
