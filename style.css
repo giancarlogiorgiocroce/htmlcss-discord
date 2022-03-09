@@ -31,7 +31,31 @@ ul{
     list-style: none;
 }
 
-/* Utils */
+/* Bottoni */
+.btn-small{
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.btn-big{
+    border-radius: 22px;
+    padding: 12px 18px;
+}
+
+/* Colori background */
+.bg-white{
+    background-color: white;
+}
+
+.bg-blue{
+    background-color: rgb(114, 137, 218);
+}
+
+.bg-black{
+    background-color: rgb(35, 39, 42);
+}
+
+/* Colori testo */
 .color-nero{
     color: black;
 }
@@ -159,17 +183,17 @@ div.inf{
     border-top: 2px solid rgb(114, 137, 218);
 }
 
-div.inf a.logo, div.inf a.btn{
+div.inf a.logo-sx, div.inf a.btn-dx{
     position: absolute;
     top: 5%;
     margin-top: 30px;
 }
 
-div.inf a.logo{
+div.inf a.logo-sx{
     left: 0;
 }
 
-div.inf a.btn{
+div.inf a.btn-dx{
     right: 0;
 }
 /* /FOOTER */
