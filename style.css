@@ -27,6 +27,11 @@ a{
     text-transform: capitalize;
 }
 
+ul{
+    list-style: none;
+}
+
+/* Utils */
 .color-nero{
     color: black;
 }
@@ -43,11 +48,6 @@ header{
 }
 
 /* Nav */
-header nav ul{
-    list-style: none;
-    width: 100%;
-}
-
 header nav ul li{
     display: inline-block;
     padding: 20px;
@@ -124,6 +124,34 @@ footer{
     background-color: rgb(35, 39, 42);
     color: white;
 }
+
+/* Div Superiore */
+footer div.colonna{
+    float: left;
+    width: 15%;
+}
+
+footer div.colonna.plus{
+    width: 40%;
+}
+
+footer div.sup h3, footer div.sup p{
+    color: rgb(114, 137, 218);
+}
+
+footer div.colonna.plus img{
+    width: 20px;
+}
+
+/* select{
+    background-color: rgb(35, 39, 42);
+    color: white;
+    width: 100px;
+}
+
+option::before{
+    content: url(img/ita.png);
+} */
 
 /* Div Inferiore */
 div.inf{
