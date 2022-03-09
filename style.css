@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --block-height: 60vh;
+}
+
 .clearfix::after{
     content: '';
     display: table;
@@ -57,7 +61,7 @@ header nav li.li-cx{
 /* Jumbo */
 header div.jumbo{
     position: relative;
-    height: 75vh;
+    height: var(--block-height);
     background-image: url(img/jumbo.png);
     background-size: cover;
 }
@@ -74,7 +78,7 @@ header div.jumbo-text{
 
 /* MAIN */
 section{
-    height: 75vh;
+    height: var(--block-height);
     position: relative;
 }
 
@@ -83,10 +87,10 @@ section:nth-child(2n+2){
 }
 
 section.ultimo{
-    height: 150vh;
+    height: calc(var(--block-height) * 2);
 }
 
-div.container{
+section div.container{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,12 +110,41 @@ div.scheda img{
 
 div.stelline{
     background-image: url(img/stars.svg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    margin: 0 auto;
 }
 /* /MAIN */
 
 
-/*  */
-/*  */
+/* FOOTER */
+footer{
+    height: var(--block-height);
+    background-color: rgb(35, 39, 42);
+    color: white;
+}
+
+/* Div Inferiore */
+div.inf{
+    position: relative;
+    border-top: 2px solid rgb(114, 137, 218);
+}
+
+div.inf a.logo, div.inf a.btn{
+    position: absolute;
+    top: 5%;
+    margin-top: 30px;
+}
+
+div.inf a.logo{
+    left: 0;
+}
+
+div.inf a.btn{
+    right: 0;
+}
+/* /FOOTER */
 
 
 /*  */
